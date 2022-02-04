@@ -146,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				E5A7EECF27AD2C13009F8CA5 /* Utility */,
+				E5A7EEDD27AD2EBE009F8CA5 /* Module */,
+				E5A7EED227AD2CF3009F8CA5 /* Repository */,
 				E5A7EEC427AD29F2009F8CA5 /* Networking */,
 				E5A7EE9127AD277E009F8CA5 /* AppDelegate.swift */,
 				E5A7EE9327AD277E009F8CA5 /* SceneDelegate.swift */,
@@ -181,7 +183,6 @@
 		E5A7EEC427AD29F2009F8CA5 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E5A7EED227AD2CF3009F8CA5 /* Repository */,
 				E5A7EEC527AD2A1D009F8CA5 /* EndPoints.swift */,
 				E5A7EEC727AD2A5C009F8CA5 /* NetworkManager.swift */,
 				E5A7EEC927AD2A6C009F8CA5 /* ApiRequest.swift */,
@@ -224,7 +225,6 @@
 			children = (
 				E5A7EED927AD2DB5009F8CA5 /* MoviesResponse.swift */,
 				E5A7EEDB27AD2DC9009F8CA5 /* MovieRepository.swift */,
-				E5A7EEDD27AD2EBE009F8CA5 /* Module */,
 			);
 			path = Model;
 			sourceTree = "<group>";
