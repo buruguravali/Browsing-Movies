@@ -17,6 +17,12 @@
 		E5A7EEAC27AD2784009F8CA5 /* BrowsingMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEAB27AD2784009F8CA5 /* BrowsingMoviesTests.swift */; };
 		E5A7EEB627AD2785009F8CA5 /* BrowsingMoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEB527AD2785009F8CA5 /* BrowsingMoviesUITests.swift */; };
 		E5A7EEB827AD2785009F8CA5 /* BrowsingMoviesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEB727AD2785009F8CA5 /* BrowsingMoviesUITestsLaunchTests.swift */; };
+		E5A7EEC627AD2A1D009F8CA5 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEC527AD2A1D009F8CA5 /* EndPoints.swift */; };
+		E5A7EEC827AD2A5C009F8CA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEC727AD2A5C009F8CA5 /* NetworkManager.swift */; };
+		E5A7EECA27AD2A6C009F8CA5 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EEC927AD2A6C009F8CA5 /* ApiRequest.swift */; };
+		E5A7EECC27AD2A7E009F8CA5 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EECB27AD2A7E009F8CA5 /* ServiceError.swift */; };
+		E5A7EECE27AD2A97009F8CA5 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EECD27AD2A97009F8CA5 /* URLRequest+Extension.swift */; };
+		E5A7EED127AD2C45009F8CA5 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A7EED027AD2C45009F8CA5 /* Rechability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		E5A7EEB127AD2785009F8CA5 /* BrowsingMoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowsingMoviesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A7EEB527AD2785009F8CA5 /* BrowsingMoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsingMoviesUITests.swift; sourceTree = "<group>"; };
 		E5A7EEB727AD2785009F8CA5 /* BrowsingMoviesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsingMoviesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5A7EEC527AD2A1D009F8CA5 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		E5A7EEC727AD2A5C009F8CA5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E5A7EEC927AD2A6C009F8CA5 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		E5A7EECB27AD2A7E009F8CA5 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		E5A7EECD27AD2A97009F8CA5 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		E5A7EED027AD2C45009F8CA5 /* Rechability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 		E5A7EE9027AD277E009F8CA5 /* BrowsingMovies */ = {
 			isa = PBXGroup;
 			children = (
+				E5A7EECF27AD2C13009F8CA5 /* Utility */,
+				E5A7EEC427AD29F2009F8CA5 /* Networking */,
 				E5A7EE9127AD277E009F8CA5 /* AppDelegate.swift */,
 				E5A7EE9327AD277E009F8CA5 /* SceneDelegate.swift */,
 				E5A7EE9527AD277E009F8CA5 /* ViewController.swift */,
@@ -128,6 +142,26 @@
 				E5A7EEB727AD2785009F8CA5 /* BrowsingMoviesUITestsLaunchTests.swift */,
 			);
 			path = BrowsingMoviesUITests;
+			sourceTree = "<group>";
+		};
+		E5A7EEC427AD29F2009F8CA5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7EEC527AD2A1D009F8CA5 /* EndPoints.swift */,
+				E5A7EEC727AD2A5C009F8CA5 /* NetworkManager.swift */,
+				E5A7EEC927AD2A6C009F8CA5 /* ApiRequest.swift */,
+				E5A7EECB27AD2A7E009F8CA5 /* ServiceError.swift */,
+				E5A7EECD27AD2A97009F8CA5 /* URLRequest+Extension.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E5A7EECF27AD2C13009F8CA5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E5A7EED027AD2C45009F8CA5 /* Rechability.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A7EECC27AD2A7E009F8CA5 /* ServiceError.swift in Sources */,
+				E5A7EEC827AD2A5C009F8CA5 /* NetworkManager.swift in Sources */,
 				E5A7EE9627AD277E009F8CA5 /* ViewController.swift in Sources */,
+				E5A7EEC627AD2A1D009F8CA5 /* EndPoints.swift in Sources */,
 				E5A7EE9C27AD277E009F8CA5 /* BrowsingMovies.xcdatamodeld in Sources */,
 				E5A7EE9227AD277E009F8CA5 /* AppDelegate.swift in Sources */,
+				E5A7EED127AD2C45009F8CA5 /* Rechability.swift in Sources */,
+				E5A7EECA27AD2A6C009F8CA5 /* ApiRequest.swift in Sources */,
+				E5A7EECE27AD2A97009F8CA5 /* URLRequest+Extension.swift in Sources */,
 				E5A7EE9427AD277E009F8CA5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
